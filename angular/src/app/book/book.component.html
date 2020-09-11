@@ -1,0 +1,71 @@
+
+    <div class="card-header">
+      <div class="row">
+        <div class="col col-md-6">
+          <h5 class="card-title">
+            {{ '::Menu:Books' | abpLocalization }}
+          </h5>
+        </div>  
+      </div>
+    </div>
+    <div class="Container-book">
+          <div class="body" *ngFor="let item of book.items;">
+          <div class="List-book">
+            <a href="fb.com" title={{item.name}} class="Item-Wrapper" style="width:20%;">
+              <div class="Item-Picture">
+                <img src="assets/Pic1.jpg" alt="Bla Bla" style="width: auto; height: 100%; opacity: 1;">
+              </div>
+              <p class="Book-Title"> {{item.name}}</p>
+             <p class="Book-Title"> {{ '::Enum:BookType:' + item.type | abpLocalization }} </p>
+              <p class="price"> {{item.price | currency}} </p>
+              <div class="bottom" style="justify-content: flex-end;">
+                <div class="Item__Deal-m1oy8w-5 kqdXNV">
+                  <div class="progress">
+                    <div class="bar">
+                      <div class="percent" style="width: 50%;"></div>
+                      <div class="content"><span class="icon tikicon icon-hot_12"></span>  
+                        <p class="text"> {{item.publishDate}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </div>
+     
+      <!-- <div class="cart-item" *ngFor="let item of book.items">
+        {{ item.name }} 
+        <span>{{item.type}}</span>
+        <span> {{item.publishDate}} </span>
+        <span>{{ item.price | currency }}</span>
+      </div>  -->
+
+     <!-- <div class="card-body">
+      <ngx-datatable [rows]="book.items" [count]="book.totalCount" [list]="list" default>
+        <ngx-datatable-column [name]= "'::BookName' | abpLocalization" prop="name">
+          <ng-template let-row="row" ngx-datatable-cell-template>
+            {{ row.name }}
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column [name]="'::Type' | abpLocalization" prop="type">
+          <ng-template let-row="row" ngx-datatable-cell-template>
+            {{ '::Enum:BookType:' + row.type | abpLocalization }}
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column [name]="'::PublishDate' | abpLocalization" prop="publishDate">
+          <ng-template let-row="row" ngx-datatable-cell-template>
+            {{ row.publishDate | date }}
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column [name]="'::Price' | abpLocalization" prop="price">
+          <ng-template let-row="row" ngx-datatable-cell-template>
+            {{ row.price | currency }}
+          </ng-template>
+        </ngx-datatable-column>
+      </ngx-datatable>
+    </div> -->
+
+
+
+  

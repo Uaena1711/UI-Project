@@ -250,3 +250,11 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# BookStore
+src/BookStore.Web/Logs/*
+src/BookStore.Web.Host/Logs/*
+src/BookStore.IdentityServer/Logs/*
+src/BookStore.HttpApi.Host/Logs/*
+src/BookStore.HttpApi.Host/Logs/*
+src/BookStore.DbMigrator/Logs/*

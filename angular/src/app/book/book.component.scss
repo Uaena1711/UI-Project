@@ -1,0 +1,127 @@
+
+
+.Container-book {
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    //display: flex; 
+    flex-direction: row; 
+    flex: 5 10% 2;
+}
+
+.body {
+
+    display: inline-block;
+    flex-wrap: wrap;
+    align-self: stretch;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+}
+
+.List-book  {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+   
+}
+.Item-Wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0% 21;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+
+.Item-Picture {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.Wrapper .Book-Title {
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 40px;
+    margin: 0px;
+    width: 100%;
+    color: rgb(36, 36, 36);
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: 0.1px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Item-Wrapper .price {
+    margin: 0px;
+    padding: 8px 0px 0px;
+    align-self: stretch;
+    color: rgb(36, 36, 36);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.Item-Wrapper .bottom {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-self: stretch;
+}
+.bar .content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 4px;
+    z-index: 2;
+}
+
+.bar {
+    position: relative;
+    flex: 1 1 0%;
+    height: 18px;
+    background-color: rgb(253, 218, 200);
+    border-radius: 9px;
+    overflow: hidden;
+}
+.bar .content .text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    color: rgb(240, 163, 62);
+    font-size: 12px;
+    text-align: center;
+}
+
